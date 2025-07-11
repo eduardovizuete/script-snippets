@@ -7,6 +7,7 @@ This directory contains automation scripts and workflows for various tasks and p
 - **backup/**: Backup automation and data management scripts
 - **ci-cd/**: Continuous integration and deployment workflows
 - **deployment/**: Application and infrastructure deployment scripts
+- **git/**: Git version control automation and account management tools
 - **maintenance/**: System maintenance and cleanup automation
 - **monitoring/**: System monitoring and alerting scripts
 - **testing/**: Automated testing scripts and frameworks
