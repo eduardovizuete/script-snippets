@@ -1,0 +1,55 @@
+# Ignore common temporary files and directories
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore backup files
+*.bak
+*.backup
+
+# Ignore compiled files
+*.o
+*.so
+*.dll
+*.exe
+*.class
+*.pyc
+__pycache__/
+
+# Ignore package manager directories
+node_modules/
+vendor/
+.bundle/
+
+# Ignore environment files with secrets
+.env
+.env.local
+.env.production
+secrets.txt
+passwords.txt
+
+# Ignore OS generated files
+.thumbnails/
+ehthumbs.db
+
+# Ignore archive files (unless specifically needed)
+*.zip
+*.tar.gz
+*.rar
+
+# Keep README files and documentation
+!README.md
+!*.md
+!docs/
