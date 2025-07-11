@@ -4,8 +4,10 @@ A comprehensive collection of scripts, code snippets, AI prompts, and automation
 
 ## 📁 Directory Structure
 
-### 🐧 Linux Installers (`linux-installers/`)
-Scripts for installing various applications and tools on Linux systems:
+### � Multi-Platform Installers (`installers/`)
+Installation scripts organized by operating system and application category:
+
+#### 🐧 Linux (`installers/linux/`)
 - **development-tools/**: IDEs, editors, compilers, and development frameworks
 - **system-utilities/**: System monitoring, file management, and utility tools
 - **media-entertainment/**: Media players, streaming apps, and entertainment software
@@ -13,6 +15,18 @@ Scripts for installing various applications and tools on Linux systems:
 - **security-tools/**: Security scanners, VPNs, and protection software
 - **server-software/**: Web servers, databases, and server applications
 - **desktop-apps/**: GUI applications and desktop environments
+
+#### 🍎 macOS (`installers/macos/`)
+- **development-tools/**: Xcode, VS Code, Docker, Homebrew-based installations
+- **productivity/**: Office suites, note-taking, and productivity applications
+- **system-utilities/**: System monitoring, file management, and utility tools
+- **media-entertainment/**: Media players, streaming, and entertainment apps
+- **security-tools/**: Security software, VPNs, and protection tools
+
+#### 🪟 Windows (`installers/windows/`)
+- **development-tools/**: Visual Studio, VS Code, Git, PowerShell-based installations
+- **productivity/**: Office suites, productivity applications
+- **system-utilities/**: System tools and utilities using Chocolatey/Winget
 
 ### 💻 Code Snippets (`code-snippets/`)
 Reusable code snippets organized by programming language:
