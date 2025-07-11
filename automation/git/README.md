@@ -1,10 +1,12 @@
 # Git Automation Tools
 
-This directory contains automation tools for Git version control management.
+This directory contains automation tools for Git version control management across multiple platforms.
 
 ## 🔧 Available Scripts
 
-### Git Account Switcher (`git-account-switcher.ps1`)
+### Windows Scripts
+
+#### Git Account Switcher (`git-account-switcher.ps1`)
 
 A flexible PowerShell script to automate switching between different Git accounts with user input validation and credential management.
 
@@ -76,6 +78,77 @@ A Windows batch file providing a menu-driven interface for the PowerShell script
 3. Clear Git Credentials  
 4. Switch with Manual Input
 5. Show Usage Guide
+
+### Linux/macOS Scripts
+
+#### Git Account Switcher (`git-account-switcher.sh`)
+
+A comprehensive bash script for Linux and macOS that provides the same functionality as the PowerShell version with platform-specific credential management.
+
+##### ✨ Features
+- **Cross-Platform**: Works on both Linux and macOS
+- **Interactive & Parameter Modes**: Same flexible interface as Windows version
+- **Email Validation**: Robust email format validation
+- **Credential Management**: Clears macOS Keychain and Linux credential stores
+- **Colored Output**: Enhanced user experience with colored terminal output
+- **Security**: Validates inputs and uses secure practices
+
+##### 🚀 Usage Examples
+
+```bash
+# Make executable (run once)
+chmod +x git-account-switcher.sh
+
+# Interactive mode
+./git-account-switcher.sh
+
+# Parameter mode
+./git-account-switcher.sh --email "user@example.com" --name "John Doe"
+
+# Clear credentials only
+./git-account-switcher.sh --clear-credentials
+
+# Show help
+./git-account-switcher.sh --help
+```
+
+##### 🛡️ Platform-Specific Features
+
+**macOS:**
+- Clears GitHub/GitLab credentials from Keychain using `security` command
+- Handles both HTTP and HTTPS protocols
+
+**Linux:**
+- Supports GNOME Keyring credential clearing
+- Compatible with `secret-tool` for credential management
+- Handles Git credential cache
+
+#### Interactive Menu (`git-switch-menu.sh`)
+
+A bash script providing a colorful menu-driven interface for the shell Git account switcher.
+
+```bash
+# Make executable and run
+chmod +x git-switch-menu.sh
+./git-switch-menu.sh
+```
+
+**Menu Options:**
+1. Switch Git Account (Interactive Mode)
+2. Quick Switch to Work Account
+3. Quick Switch to Personal Account  
+4. Clear Git Credentials Only
+5. Show Current Git Configuration
+6. Show Help
+7. Exit
+
+**Note**: The menu runs in a continuous loop until you select option 7 (Exit). This is intentional behavior for an interactive menu system.
+
+##### ⚙️ Requirements
+
+- **Bash shell** (available on Linux/macOS by default)
+- **Git CLI** installed and accessible
+- **Optional**: `secret-tool` (Linux), `security` command (macOS) for credential management
 
 #### 📝 Use Cases
 
@@ -182,5 +255,34 @@ When adding new Git automation tools:
 2. Include comprehensive parameter validation
 3. Provide both interactive and parameter modes
 4. Add proper documentation with examples
-5. Test on multiple Windows versions
+5. Test on target platforms (Windows/Linux/macOS)
 6. Ensure security best practices
+7. Use platform-appropriate credential management
+
+## 📋 Platform Comparison
+
+| Feature | Windows (PowerShell) | Linux/macOS (Bash) |
+|---------|---------------------|-------------------|
+| Interactive Mode | ✅ | ✅ |
+| Parameter Mode | ✅ | ✅ |
+| Email Validation | ✅ | ✅ |
+| Credential Clearing | Windows Credential Manager | Keychain/GNOME Keyring |
+| Menu Interface | Batch file | Bash script |
+| Colored Output | Limited | Full color support |
+| Error Handling | Comprehensive | Comprehensive |
+| Help System | Built-in | Built-in |
+
+## 🚀 Quick Start
+
+### Windows
+```cmd
+# Download and run
+.\git-switch.bat
+```
+
+### Linux/macOS
+```bash
+# Download, make executable, and run
+chmod +x git-switch-menu.sh
+./git-switch-menu.sh
+```
