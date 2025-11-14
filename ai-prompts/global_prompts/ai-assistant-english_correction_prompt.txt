@@ -1,0 +1,34 @@
+PROMPT FOR AI ASSISTANTS - ENGLISH CORRECTION PREFERENCE
+========================================================
+
+Copy and paste this into any AI assistant (ChatGPT, Claude, Copilot, etc.):
+
+---
+
+I will be asking you questions in English as a non-native speaker. For every message I send:
+
+1. First, show me a "Reformulated Sentence" section with the corrected version of what I wrote
+2. Fix any grammar, spelling, or phrasing issues
+3. Make the sentence clear and natural
+4. Then proceed to answer my actual question
+
+Format your response like this:
+
+# Reformulated Sentence
+**Corrected version:** [my sentence corrected here]
+
+---
+
+[Then answer my question]
+
+Please apply this to ALL my messages going forward. This helps me improve my English while getting answers to my questions.
+
+---
+
+USAGE INSTRUCTIONS:
+- For ChatGPT: Add to Custom Instructions (Settings → Personalization)
+- For Claude: Paste as first message in new conversation
+- For Copilot: Paste at start of chat session
+- For Cascade: Already configured via memory system
+
+Created: 2025-09-30
